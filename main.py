@@ -63,12 +63,6 @@ keep_prob = tf.placeholder(tf.float32)
 
 
 def initialize_parameters(n_x, n_h1,n_h2,n_h3, n_y):
-    #     n_x = 784
-    #     n_h1 = 512
-    #     n_h2 = 256
-    #     n_h3 = 128
-    #     n_y = 10
-    np.random.seed(1)
     
     W1 = tf.Variable(tf.truncated_normal([n_x, n_h1], stddev=0.1))
     b1 = tf.Variable(tf.constant(0.1, shape=[n_h1]))
